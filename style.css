@@ -1,0 +1,16 @@
+.myname{
+  background-color:maroon;
+  border-radius: 10px;
+  color:white;
+  text-align:center;
+  height:400px;
+  text-transform:uppercase;
+}
+
+.name{
+  background-color:white;
+  color:black;
+  height:250px;
+  vertical-align: middle;
+  border-radius: 4px;
+}
