@@ -3,14 +3,37 @@
   border-radius: 10px;
   color:white;
   text-align:center;
-  height:400px;
-  text-transform:uppercase;
+  height:450px;
 }
 
-.name{
+.name-box{
   background-color:white;
   color:black;
   height:250px;
-  vertical-align: middle;
   border-radius: 4px;
+  padding:5px;
+}
+
+.name{
+  font-family: 'Permanent Marker', cursive;
+  vertical-align: middle;
+  font-size: 9em;
+}
+
+.hello{
+  font-size: 5em;
+}
+
+.sub-title{
+  padding-bottom:3px;
+}
+
+.sub-title, .hello{
+    font-weight: bold;
+    text-transform:uppercase;
+}
+
+
+.what-i-do{
+  font-size: 1.5em;
 }
