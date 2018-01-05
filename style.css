@@ -1,4 +1,4 @@
-.myname{
+.nametag{
   background-color:maroon;
   border-radius: 10px;
   color:white;
@@ -29,11 +29,28 @@
 }
 
 .sub-title, .hello{
-    font-weight: bold;
-    text-transform:uppercase;
+  font-weight: bold;
+  text-transform:uppercase;
 }
 
 
 .what-i-do{
   font-size: 1.5em;
+}
+
+
+@media only screen and (max-width: 320px){
+  .nametag{
+    height:375px;
+  }
+  .name-box{
+    height:200px;
+  }
+  .name{
+    font-size:5em;
+  }
+
+  .what-i-do{
+    font-size:1em;
+  }
 }
