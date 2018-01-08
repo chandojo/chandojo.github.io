@@ -1,23 +1,37 @@
-.nametag{
+.nametag, .contact{
   background-color:maroon;
   border-radius: 10px;
   color:white;
   text-align:center;
   height:450px;
+  cursor:pointer;
+  margin-top:10%;
 }
 
+.contact{
+  padding-top:10px;
+}
 .name-box{
   background-color:white;
   color:black;
   height:250px;
+  width:95%;
   border-radius: 4px;
   padding:5px;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
 }
 
-.name{
+.name, .email{
   font-family: 'Permanent Marker', cursive;
   vertical-align: middle;
   font-size: 9em;
+}
+
+.email{
+  font-size: 2.5em;
+  text-transform:lowercase;
+  padding:10px;
 }
 
 .hello{
@@ -38,6 +52,9 @@
   font-size: 1.5em;
 }
 
+.card{
+  border:none;
+}
 
 @media only screen and (max-width: 540px){
   .nametag{
