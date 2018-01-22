@@ -9,11 +9,12 @@
 }
 
 
-.second-section{
+#second-section{
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity:0.7;
   height:400px;
 }
 
@@ -67,10 +68,10 @@
   margin: 0% 30% 5% 30%;
 }
 
-.page-header{
+#first-section{
   height:800px;
 }
-.third-section{
+#third-section{
   height:400px;
 }
 
