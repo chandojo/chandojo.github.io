@@ -1,15 +1,20 @@
-.nametag, .contact{
-  background-color:maroon;
-  border-radius: 10px;
-  color:white;
-  text-align:center;
-  height:450px;
-  cursor:pointer;
-  margin-top:10%;
-}
+/*
+Index of design:
+  1. Parallax effects
+  2. Card
+    2a) Front
+    2b) Back
+  3. Sections
+    3a) Header
+    3b) About
 
 
-#second-section{
+*/
+
+/* -------------
+1. Parallax Effects
+-------------- */
+.parallax{
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -18,32 +23,9 @@
   height:400px;
 }
 
-.contact{
-  padding-top:10px;
-}
-.name-box{
-  background-color:white;
-  color:black;
-  height:250px;
-  width:95%;
-  border-radius: 4px;
-  padding:5px;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-}
-
-.name, .email{
-  font-family: 'Permanent Marker', cursive;
-  vertical-align: middle;
-  font-size: 9em;
-}
-
-.email{
-  font-size: 2.5em;
-  text-transform:lowercase;
-  padding:10px;
-}
-
+/* -------------
+2. Card
+-------------- */
 .header-1, .header-2{
   font-size: 5em;
 }
@@ -57,22 +39,83 @@
   text-transform:uppercase;
 }
 
-
-.what-i-do{
-  font-size: 1.5em;
-}
-
 .card{
   border:none;
   width: 40%;
   margin: 0% 30% 5% 30%;
 }
 
+.name, .email{
+  font-family: 'Permanent Marker', cursive;
+  vertical-align: middle;
+  font-size: 9em;
+}
+
+
+/* -------------
+2a) Front of Card
+-------------- */
+.nametag, .contact{
+  background-color:maroon;
+  border-radius: 10px;
+  color:white;
+  text-align:center;
+  height:450px;
+  cursor:pointer;
+  margin-top:10%;
+}
+]
+.name-box{
+  background-color:white;
+  color:black;
+  height:250px;
+  width:95%;
+  border-radius: 4px;
+  padding:5px;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+/* -------------
+2b) Back of Card
+-------------- */
+
+.contact{
+  padding-top:10px;
+}
+
+.email{
+  font-size: 2.5em;
+  text-transform:lowercase;
+  padding:10px;
+}
+
+.what-i-do{
+  font-size: 1.5em;
+}
+
+/* -------------
+3. Sections
+-------------- */
+/* -------------
+3a) Header
+-------------- */
 #first-section{
   height:800px;
 }
+
+/* -------------
+3b) About
+-------------- */
 #third-section{
-  height:400px;
+  height:200px;
+  background-color:#575555;
+}
+
+.about{
+  padding-top:5%;
+  margin:0 25%;
+  color:white;
 }
 
 /* ----- Responsive design ----- */
