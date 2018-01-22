@@ -1,5 +1,5 @@
 /*
-Index of design:
+INDEX OF DESIGN:
   1. Parallax effects
   2. Card
     2a) Front
@@ -7,8 +7,6 @@ Index of design:
   3. Sections
     3a) Header
     3b) About
-
-
 */
 
 /* -------------
@@ -26,15 +24,12 @@ Index of design:
 /* -------------
 2. Card
 -------------- */
-.header-1, .header-2{
+.header-1{
   font-size: 5em;
 }
 
 .sub-title{
   padding-bottom:3px;
-}
-
-.sub-title, .hello{
   font-weight: bold;
   text-transform:uppercase;
 }
@@ -45,7 +40,7 @@ Index of design:
   margin: 0% 30% 5% 30%;
 }
 
-.name, .email{
+.name{
   font-family: 'Permanent Marker', cursive;
   vertical-align: middle;
   font-size: 9em;
@@ -55,16 +50,15 @@ Index of design:
 /* -------------
 2a) Front of Card
 -------------- */
-.nametag, .contact{
+.nametag{
   background-color:maroon;
   border-radius: 10px;
   color:white;
   text-align:center;
   height:450px;
-  cursor:pointer;
   margin-top:10%;
 }
-]
+
 .name-box{
   background-color:white;
   color:black;
@@ -76,27 +70,23 @@ Index of design:
   margin-right: 2.5%;
 }
 
-/* -------------
-2b) Back of Card
--------------- */
-
-.contact{
-  padding-top:10px;
-}
-
-.email{
-  font-size: 2.5em;
-  text-transform:lowercase;
-  padding:10px;
-}
-
 .what-i-do{
   font-size: 1.5em;
 }
 
+
 /* -------------
 3. Sections
 -------------- */
+.about, .projects, .contact {
+  padding-top:5%;
+  margin:0 25%;
+  color:white;
+}
+
+#third-section, #fifth-section, #seventh-section{
+  height:250px;
+}
 /* -------------
 3a) Header
 -------------- */
@@ -104,18 +94,33 @@ Index of design:
   height:800px;
 }
 
+.scroll{
+  vertical-align: bottom;
+  color:#dadada;
+  text-align:center;
+  text-transform: uppercase;
+}
+
 /* -------------
 3b) About
 -------------- */
 #third-section{
-  height:200px;
   background-color:#575555;
 }
 
-.about{
-  padding-top:5%;
-  margin:0 25%;
-  color:white;
+/* -------------
+3c) Projects
+-------------- */
+#fifth-section{
+  background-color: #2b662b;
+}
+
+/* -------------
+3d) Contact
+-------------- */
+
+#seventh-section{
+  background-color: #4b5c6c;
 }
 
 /* ----- Responsive design ----- */
@@ -130,7 +135,7 @@ Index of design:
 @media only screen and (max-width: 1024px){
   .card{
     width:55%;
-    margin: 0% 25%;
+    margin: 0% 23%;
   }
 }
 
