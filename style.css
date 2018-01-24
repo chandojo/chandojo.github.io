@@ -116,8 +116,15 @@ INDEX OF DESIGN:
   width:100%;
 }
 
+.projects{
+  width:100%;
+}
+
 .gallery{
   padding-bottom: 5%;
+  width:100%;
+  overflow-x: scroll;
+  height: 400px;
 }
 
 .gallery-item{
@@ -129,6 +136,10 @@ INDEX OF DESIGN:
   display:inline-block;
 }
 
+.item-hover{
+  background-color: black;
+  opacity:0.6;
+}
 
 /* -------------
 3d) Contactit
