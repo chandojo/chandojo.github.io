@@ -113,6 +113,7 @@ INDEX OF DESIGN:
 -------------- */
 #fifth-section{
   background-color: #2b662b;
+  width:100%;
 }
 
 .gallery{
@@ -125,7 +126,9 @@ INDEX OF DESIGN:
   padding:10px 10px 10px 0;
   background-size:cover;
   background-repeat: no-repeat;
+  display:inline-block;
 }
+
 
 /* -------------
 3d) Contactit
