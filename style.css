@@ -116,15 +116,15 @@ INDEX OF DESIGN:
   width:100%;
 }
 
-.projects{
-  width:100%;
-}
+
+
 
 .gallery{
   padding-bottom: 5%;
   width:100%;
-  overflow-x: scroll;
+  overflow:auto;
   height: 400px;
+  white-space: nowrap
 }
 
 .gallery-item{
