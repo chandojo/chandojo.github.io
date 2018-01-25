@@ -116,8 +116,9 @@ INDEX OF DESIGN:
   width:100%;
 }
 
-
-
+.projects{
+  margin: 0 20%;
+}
 
 .gallery{
   padding-bottom: 5%;
@@ -139,6 +140,7 @@ INDEX OF DESIGN:
 .item-hover{
   background-color: black;
   opacity:0.6;
+  cursor: pointer;
 }
 
 /* -------------
