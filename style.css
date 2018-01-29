@@ -84,7 +84,7 @@ INDEX OF DESIGN:
   color:white;
 }
 
-#third-section, #seventh-section{
+#third-section{
   height:250px;
 }
 /* -------------
@@ -149,6 +149,12 @@ INDEX OF DESIGN:
 
 #seventh-section{
   background-color: #4b5c6c;
+  padding-bottom:5%;
+}
+
+.inputfield{
+  height:300px;
+  word-wrap: break-word;
 }
 
 /* ----- Responsive design ----- */
