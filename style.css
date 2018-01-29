@@ -1,16 +1,64 @@
-.nametag, .contact{
+/* -------------------
+INDEX OF DESIGN:
+  1. Parallax effects
+  2. Card
+    2a) Front
+    2b) Back
+  3. Sections
+    3a) Header
+    3b) About
+-------------------- */
+
+/* -------------
+1. Parallax Effects
+-------------- */
+.parallax{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity:0.7;
+  height:400px;
+}
+
+/* -------------
+2. Card
+-------------- */
+.header-1{
+  font-size: 5em;
+}
+
+.sub-title{
+  padding-bottom:3px;
+  font-weight: bold;
+  text-transform:uppercase;
+}
+
+.card{
+  border:none;
+  width: 40%;
+  margin: 0% 30% 5% 30%;
+}
+
+.name{
+  font-family: 'Permanent Marker', cursive;
+  vertical-align: middle;
+  font-size: 9em;
+}
+
+
+/* -------------
+2a) Front of Card
+-------------- */
+.nametag{
   background-color:maroon;
   border-radius: 10px;
   color:white;
   text-align:center;
   height:450px;
-  cursor:pointer;
   margin-top:10%;
 }
 
-.contact{
-  padding-top:10px;
-}
 .name-box{
   background-color:white;
   color:black;
@@ -22,38 +70,114 @@
   margin-right: 2.5%;
 }
 
-.name, .email{
-  font-family: 'Permanent Marker', cursive;
-  vertical-align: middle;
-  font-size: 9em;
-}
-
-.email{
-  font-size: 2.5em;
-  text-transform:lowercase;
-  padding:10px;
-}
-
-.header-1, .header-2{
-  font-size: 5em;
-}
-
-.sub-title{
-  padding-bottom:3px;
-}
-
-.sub-title, .hello{
-  font-weight: bold;
-  text-transform:uppercase;
-}
-
-
 .what-i-do{
   font-size: 1.5em;
 }
 
-.card{
-  border:none;
+
+/* -------------
+3. Sections
+-------------- */
+.about, .projects, .contact {
+  padding-top:5%;
+  margin:0 25%;
+  color:white;
+}
+
+#third-section{
+  height:250px;
+}
+/* -------------
+3a) Header
+-------------- */
+#first-section{
+  height:800px;
+}
+
+.scroll{
+  vertical-align: bottom;
+  color:#dadada;
+  text-align:center;
+  text-transform: uppercase;
+}
+
+/* -------------
+3b) About
+-------------- */
+#third-section{
+  background-color:#575555;
+}
+
+/* -------------
+3c) Projects
+-------------- */
+#fifth-section{
+  background-color: #2b662b;
+  width:100%;
+}
+
+.projects{
+  margin: 0 20%;
+}
+
+.gallery{
+  padding-bottom: 5%;
+  width:100%;
+  overflow:auto;
+  height: 400px;
+  white-space: nowrap
+}
+
+.gallery-item{
+  width:350px;
+  height:350px;
+  padding:10px 10px 10px 0;
+  background-size:cover;
+  background-repeat: no-repeat;
+  display:inline-block;
+}
+
+.item-hover{
+  background-color: black;
+  opacity:0.6;
+  cursor: pointer;
+}
+
+/* -------------
+3d) Contactit
+-------------- */
+
+#seventh-section{
+  background-color: #4b5c6c;
+  padding-bottom:5%;
+}
+
+.inputfield{
+  height:300px;
+  word-wrap: break-word;
+}
+
+/* ----- Responsive design ----- */
+@media only screen and (max-width: 1280px){
+
+
+  .card{
+    width:45%;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  .card{
+    width:55%;
+    margin: 0% 23%;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .card{
+    width: 75%;
+    margin: 0% 13%;
+  }
 }
 
 @media only screen and (max-width: 540px){
