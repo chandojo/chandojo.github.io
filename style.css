@@ -1,11 +1,11 @@
 /* -------------------
 INDEX OF DESIGN:
-  1. Card
+  1. NameCard
   2. Effects
 -------------------- */
 
 /* -------------
-1. Card
+1. NameCard
 -------------- */
 .header-1{
   font-size: 5em;
@@ -17,7 +17,7 @@ INDEX OF DESIGN:
   text-transform:uppercase;
 }
 
-.card{
+.namecard{
   border:none;
   width: 50%;
   margin: auto;
@@ -65,7 +65,7 @@ INDEX OF DESIGN:
 /* ----- Responsive design ----- */
 
 @media only screen and (max-width: 1024px){
-  .card{
+  .namecard{
     width:50%;
     margin: 0% 23%;
   }
@@ -76,7 +76,7 @@ INDEX OF DESIGN:
 }
 
 @media only screen and (max-width:768px){
-  .card{
+  .namecard{
     width: 75%;
     margin:auto;
   }
@@ -86,7 +86,7 @@ INDEX OF DESIGN:
 }
 
 @media only screen and (max-width: 540px){
-  .card{
+  .namecard{
     width:75%;
     margin:auto;
   }
