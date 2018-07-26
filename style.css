@@ -1,28 +1,11 @@
 /* -------------------
 INDEX OF DESIGN:
-  1. Parallax effects
-  2. Card
-    2a) Front
-    2b) Back
-  3. Sections
-    3a) Header
-    3b) About
+  1. Card
+  2. Effects
 -------------------- */
 
 /* -------------
-1. Parallax Effects
--------------- */
-.parallax{
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity:0.7;
-  height:400px;
-}
-
-/* -------------
-2. Card
+1. Card
 -------------- */
 .header-1{
   font-size: 5em;
@@ -46,12 +29,6 @@ INDEX OF DESIGN:
   font-size: 9em;
 }
 
-
-
-
-/* -------------
-2a) Front of Card
--------------- */
 .nametag{
   background-color:maroon;
   border-radius: 10px;
@@ -76,91 +53,14 @@ INDEX OF DESIGN:
   font-size: 1.5em;
 }
 
-
 /* -------------
-3. Sections
+2) Effects
 -------------- */
-.about, .projects, .contact {
-  padding-top:5%;
-  margin:0 25%;
-  color:white;
-}
-
-#third-section{
-  height:250px;
-}
-/* -------------
-3a) Header
--------------- */
-#first-section{
-  height:800px;
-}
 
 .hidden{
   display:none;
 }
 
-.scroll{
-  vertical-align: bottom;
-  color:#dadada;
-  text-align:center;
-  text-transform: uppercase;
-}
-
-/* -------------
-3b) About
--------------- */
-#third-section{
-  background-color:#575555;
-}
-
-/* -------------
-3c) Projects
--------------- */
-#fifth-section{
-  background-color: #2b662b;
-  width:100%;
-}
-
-.projects{
-  margin: 0 20%;
-}
-
-.gallery{
-  padding-bottom: 5%;
-  width:100%;
-  overflow:auto;
-  height: 400px;
-  white-space: nowrap
-}
-
-.gallery-item{
-  width:350px;
-  height:350px;
-  padding:10px 10px 10px 0;
-  background-size:cover;
-  background-repeat: no-repeat;
-  display:inline-block;
-}
-
-.item-hover{
-  background-color: black;
-  opacity:0.6;
-}
-
-/* -------------
-3d) Contactit
--------------- */
-
-#seventh-section{
-  background-color: #4b5c6c;
-  padding-bottom:5%;
-}
-
-.inputfield{
-  height:300px;
-  word-wrap: break-word;
-}
 
 /* ----- Responsive design ----- */
 @media only screen and (max-width: 1280px){
