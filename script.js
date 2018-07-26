@@ -1,4 +1,5 @@
 $(function(){
-  $("#first-section").fadeIn(800);
-  $("#first-section").removeClass("hidden");
+  $("#first-section")
+    .fadeIn(800)
+    .removeClass("hidden");
 });
