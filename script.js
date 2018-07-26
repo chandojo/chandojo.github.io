@@ -1,5 +1,5 @@
 $(function(){
-  $("#first-section")
+  $("#page")
     .fadeIn(800)
     .removeClass("hidden");
 });
