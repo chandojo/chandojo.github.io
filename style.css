@@ -26,7 +26,7 @@ INDEX OF DESIGN:
 .name{
   font-family: 'Permanent Marker', cursive;
   vertical-align: middle;
-  font-size: 9em;
+  font-size: 8em;
 }
 
 .nametag{
@@ -71,20 +71,25 @@ INDEX OF DESIGN:
   }
 
   .name{
-    font-size:6.3em;
+    font-size:5.5em;
   }
 }
 
 @media only screen and (max-width:768px){
   .card{
-    width: 50%;
+    width: 75%;
+    margin:auto;
   }
   .name{
-    font-size:5.4em;
+    font-size:4.0em;
   }
 }
 
 @media only screen and (max-width: 540px){
+  .card{
+    width:75%;
+    margin:auto;
+  }
   .nametag{
     height:325px;
   }
@@ -97,7 +102,7 @@ INDEX OF DESIGN:
   .what-i-do{
     font-size:1em;
   }
-  .header-2{
+  .header-1, .header-2{
     font-size:4em;
   }
 }
