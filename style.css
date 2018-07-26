@@ -47,6 +47,8 @@ INDEX OF DESIGN:
 }
 
 
+
+
 /* -------------
 2a) Front of Card
 -------------- */
@@ -92,6 +94,10 @@ INDEX OF DESIGN:
 -------------- */
 #first-section{
   height:800px;
+}
+
+.hidden{
+  display:none;
 }
 
 .scroll{
