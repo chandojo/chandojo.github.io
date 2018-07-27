@@ -5,7 +5,12 @@ $(function(){
 
   $(".namecard").addClass("active");
 
-    $("a.project-weblink").click(function(){
-      $(".projects").toggleClass("hidden");
+
+
+    $("a.project-weblink").on('click', event => {
+      $(".projects")
+      .fadeToggle("hidden");
     });
+
+
 });
