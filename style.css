@@ -3,7 +3,8 @@ INDEX OF DESIGN:
   1. NameCard
   2. Effects
   3. Projects
-  4. Responsive Design
+  4. About
+  5. Responsive Design
 -------------------- */
 
 /* -------------
@@ -67,7 +68,7 @@ INDEX OF DESIGN:
 3) Projects
 -------------- */
 
-.projects-title{
+.title{
   text-align: center;
 }
 
@@ -87,9 +88,16 @@ img.detail{
 }
 
 
+/* --------------
+4) About
+--------------- */
+
+.aboutme {
+  text-align: center;
+}
 
 /* --------------
-4) Responsive design
+5) Responsive design
 --------------- */
 
 @media only screen and (max-width: 1024px){
