@@ -26,8 +26,8 @@ INDEX OF DESIGN:
 
 .namecard{
   border:none;
-  width: 50%;
   margin: auto;
+  width:50%;
 }
 
 .name{
@@ -65,6 +65,10 @@ INDEX OF DESIGN:
 2) Effects and Overall Design
 -------------- */
 
+body{
+  background-color: whitesmoke;
+}
+
 .hidden{
   display:none;
 }
@@ -81,18 +85,14 @@ INDEX OF DESIGN:
   text-transform: uppercase;
 }
 
-#page{
-  background-color: whitesmoke;
-}
-
 .section{
-  background-color: white;
-  padding: 5% 0;
+  margin-top:5% 1%;
 }
 
 .button {
 	margin-top: 20px;
 }
+
 
 /* -------------
 3) Projects
@@ -122,15 +122,17 @@ img.project{
 5) Responsive design
 --------------- */
 
+/*---
 @media only screen and (max-width: 1024px){
   .namecard{
-    width:50%;
+    width:55%;
     margin: 0% 23%;
   }
 
   .name{
     font-size:5.5em;
   }
+
 }
 
 @media only screen and (max-width:768px){
@@ -164,3 +166,4 @@ img.project{
     font-size:4em;
   }
 }
+---*/
