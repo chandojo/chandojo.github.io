@@ -20,6 +20,10 @@ INDEX OF DESIGN:
   text-transform:uppercase;
 }
 
+.header-1, .sub-title{
+  font-family: "Lato", sans-serif;
+}
+
 .namecard{
   border:none;
   width: 50%;
@@ -54,36 +58,57 @@ INDEX OF DESIGN:
 
 .what-i-do{
   font-size: 1.5em;
+  font-family: "Roboto Slab", serif;
 }
 
 /* -------------
-2) Effects
+2) Effects and Overall Design
 -------------- */
 
 .hidden{
   display:none;
 }
 
-/* -------------
-3) Projects
--------------- */
-
-.title{
+.detail{
+  vertical-align: text-top;
+  font-family: "Roboto Slab", serif;
   text-align: center;
 }
 
-.detail{
+.title{
+  font-family:"Lato", sans-serif;
+  text-align:center;
+  text-transform: uppercase;
+}
+
+#page{
+  background-color: whitesmoke;
+}
+
+.section{
+  background-color: white;
+  padding: 5% 0;
+}
+
+.button {
+	margin-top: 20px;
+}
+
+/* -------------
+3) Projects
+-------------- */
+.project{
   display:inline-block;
   width:49%;
   vertical-align: text-top;
   text-align: right;
 }
 
-p.detail{
+p.project{
   padding: 0 1% 0 10%;
 }
 
-img.detail{
+img.project{
   padding: 0 10% 0 1%;
 }
 
@@ -92,9 +117,6 @@ img.detail{
 4) About
 --------------- */
 
-.aboutme {
-  text-align: center;
-}
 
 /* --------------
 5) Responsive design
