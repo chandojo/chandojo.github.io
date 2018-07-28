@@ -30,37 +30,6 @@ INDEX OF DESIGN:
   width:50%;
 }
 
-.name{
-  font-family: 'Permanent Marker', cursive;
-  vertical-align: middle;
-  font-size: 8em;
-}
-
-.nametag{
-  background-color:maroon;
-  border-radius: 10px;
-  color:white;
-  text-align:center;
-  height:450px;
-  margin-top:10%;
-}
-
-.name-box{
-  background-color:white;
-  color:black;
-  height:250px;
-  width:95%;
-  border-radius: 4px;
-  padding:5px;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-}
-
-.what-i-do{
-  font-size: 1.5em;
-  font-family: "Roboto Slab", serif;
-}
-
 /* -------------
 2) Effects and Overall Design
 -------------- */
@@ -121,49 +90,3 @@ img.project{
 /* --------------
 5) Responsive design
 --------------- */
-
-/*---
-@media only screen and (max-width: 1024px){
-  .namecard{
-    width:55%;
-    margin: 0% 23%;
-  }
-
-  .name{
-    font-size:5.5em;
-  }
-
-}
-
-@media only screen and (max-width:768px){
-  .namecard{
-    width: 75%;
-    margin:auto;
-  }
-  .name{
-    font-size:4.0em;
-  }
-}
-
-@media only screen and (max-width: 540px){
-  .namecard{
-    width:75%;
-    margin:auto;
-  }
-  .nametag{
-    height:325px;
-  }
-  .name-box{
-    height:150px;
-  }
-  .name{
-    font-size:3.5em;
-  }
-  .what-i-do{
-    font-size:1em;
-  }
-  .header-1, .header-2{
-    font-size:4em;
-  }
-}
----*/
