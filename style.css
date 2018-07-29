@@ -78,6 +78,13 @@ table{
 
 td{
   text-align: center;
+  width:50%;
+  padding-top:2%;
+}
+
+
+td.leftalign {
+  text-align:left;
 }
 
 
