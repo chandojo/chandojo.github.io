@@ -97,7 +97,7 @@ td.leftalign {
 	flex-wrap: wrap;
 }
 
-.proj1{
+.proj1, .proj2{
   padding:1% 5%;
 }
 .project{
@@ -114,6 +114,10 @@ img.project{
 
 .about-section {
 	margin: auto;
+}
+
+.development{
+  width:100%;
 }
 
 /* --------------
@@ -143,6 +147,11 @@ img.project{
   .detail{
     width:49%;
     text-align: right;
+  }
+
+  .development{
+    width:100%;
+    text-align:center;
   }
 
   p.project{
