@@ -112,6 +112,10 @@ img.project{
   width:100%;
 }
 
+.about-section {
+	margin: auto;
+}
+
 /* --------------
 4) Responsive design
 --------------- */
@@ -152,7 +156,7 @@ img.project{
     width:20%;
   }
 
-  .namecard{
+  .namecard, .about-section{
     width:60%;
   }
 
