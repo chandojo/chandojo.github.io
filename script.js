@@ -3,22 +3,15 @@ $(function(){
     .fadeIn(800)
     .removeClass("hidden");
 
-    $("#link-1,#link-2,#link-3").click(function () {
-        $(".section").eq($(this).index()).fadeToggle("hidden");
-        $('.section:not(":eq('+$(this).index()+')")').fadeOut();
-        $(".namecard").addClass("hidden");
-        $(".space").addClass("hidden");
+
+
+    $("#link-1,#link-2,#link-3,#link-4").click(function () {
+        $(".section").eq($(this).index()).fadeIn("slow").removeClass("hidden");
+        $('.section:not(":eq('+$(this).index()+')")').fadeOut().addClass("hidden");
+//        $(".namecard").not(".hidden").addClass("hidden");
+
     });
 
-
-//    $("a.project-weblink").on('click', event => {
-//      $(".projects")
-//      .fadeToggle("hidden");
-//
-//
-//      $(".namecard")
-//      .toggleClass("hidden");
-//    });
 
 
 

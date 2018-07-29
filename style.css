@@ -63,7 +63,7 @@ body{
 }
 
 .section{
-  margin-top:5% 1%;
+  margin-top:5%;
   width:100%;
 }
 
@@ -82,7 +82,7 @@ body{
 }
 
 .proj1{
-  padding:5%;
+  padding:1% 5%;
 }
 .project{
   vertical-align: text-top;
@@ -92,9 +92,6 @@ img.project{
   width:100%;
 }
 
-.about, .contact{
-  margin:auto;
-}
 .about-section, .contact-section{
   width:100%;
 }
