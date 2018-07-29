@@ -101,17 +101,7 @@ img.project{
 /* --------------
 5) Responsive design
 --------------- */
-/*
-@media screen and (min-width:480px){
-  .space{
-    width: 10%;
-  }
 
-  .namecard{
-    width: 80%;
-  }
-}
-*/
 @media screen and (min-width:550px){
   .space{
     width:5%;
