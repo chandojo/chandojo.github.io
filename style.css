@@ -27,7 +27,10 @@ INDEX OF DESIGN:
 .namecard{
   border:none;
   margin: auto;
-  width:50%;
+}
+
+.space, .namecard{
+  width:100%;
 }
 
 /* -------------
@@ -38,6 +41,11 @@ body{
   background-color: whitesmoke;
 }
 
+.bucket{
+  display:flex;
+  flex-wrap:wrap;
+}
+
 .hidden{
   display:none;
 }
@@ -46,6 +54,7 @@ body{
   vertical-align: text-top;
   font-family: "Roboto Slab", serif;
   text-align: center;
+  width:100%;
 }
 
 .title{
@@ -66,19 +75,21 @@ body{
 /* -------------
 3) Projects
 -------------- */
-.project{
-  display:inline-block;
-  width:49%;
-  vertical-align: text-top;
-  text-align: right;
+
+.project-details {
+	display: flex;
+	flex-wrap: wrap;
 }
 
-p.project{
-  padding: 0 1% 0 10%;
+.proj1{
+  padding:5%;
+}
+.project{
+  vertical-align: text-top;
 }
 
 img.project{
-  padding: 0 10% 0 1%;
+  width:100%;
 }
 
 
@@ -90,3 +101,62 @@ img.project{
 /* --------------
 5) Responsive design
 --------------- */
+/*
+@media screen and (min-width:480px){
+  .space{
+    width: 10%;
+  }
+
+  .namecard{
+    width: 80%;
+  }
+}
+*/
+@media screen and (min-width:550px){
+  .space{
+    width:5%;
+  }
+
+  .namecard{
+    width:90%;
+  }
+}
+
+@media screen and (min-width:768px){
+  .space{
+    width:10%;
+  }
+
+  .namecard{
+    width:80%;
+  }
+
+  .detail{
+    width:49%;
+    text-align: right;
+  }
+
+  p.project{
+    padding:0 5% 0 0;
+  }
+}
+
+@media screen and (min-width:1000px){
+  .space{
+    width:20%;
+  }
+
+  .namecard{
+    width:60%;
+  }
+}
+
+@media screen and (min-width:1228px){
+  .space{
+    width:25%;
+  }
+
+  .namecard{
+    width:50%;
+  }
+}

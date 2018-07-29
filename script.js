@@ -8,7 +8,7 @@ $(function(){
       .fadeToggle("hidden");
 
 
-      $(".nametag")
+      $(".namecard")
       .toggleClass("hidden");
     });
 
