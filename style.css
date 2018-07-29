@@ -2,9 +2,8 @@
 INDEX OF DESIGN:
   1. NameCard
   2. Effects
-  3. Projects
-  4. About
-  5. Responsive Design
+  3. Sections
+  4. Responsive Design
 -------------------- */
 
 /* -------------
@@ -50,7 +49,7 @@ body{
   display:none;
 }
 
-.detail{
+.detail, .aboutme, .contactme {
   vertical-align: text-top;
   font-family: "Roboto Slab", serif;
   text-align: center;
@@ -73,7 +72,7 @@ body{
 
 
 /* -------------
-3) Projects
+3) Sections
 -------------- */
 
 .project-details {
@@ -92,14 +91,15 @@ img.project{
   width:100%;
 }
 
+.about, .contact{
+  margin:auto;
+}
+.about-section, .contact-section{
+  width:100%;
+}
 
 /* --------------
-4) About
---------------- */
-
-
-/* --------------
-5) Responsive design
+4) Responsive design
 --------------- */
 
 @media screen and (min-width:550px){
