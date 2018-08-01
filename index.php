@@ -103,7 +103,7 @@
             Name: <input type="text" name="name" /> <span class="error">* <?php echo $nameErr;?></span> <br/>
             Email: <input type="text" name="email"  /> <span class="error">* <?php echo $emailErr;?></span> <br/>
             Message: <textarea name="message"></textarea> <span class="error">* <?php echo $messageErr;?></span> <br/>
-            <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+            <div class="g-recaptcha" data-sitekey="6LeawGcUAAAAALZgZWqsbWOP9yey3p1v9l2BKW__"></div>
             <button type="submit" form="contact-form" value="Submit">Submit</button> <span><?php echo $success; ?></span>
 
           </form>
