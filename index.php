@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto+Slab|Lato:900" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <title>Hello, I am Celena</title>
   </head>
@@ -92,19 +93,21 @@
         </div>
 
         <!---- HIRE ---->
-        <div class="contact section hidden">
+        <div class="contact section">
           <h2 class="title">Let's Work Together</h2>
           <div class="contact-section">
           <p class="contactme">If you have a cool project in mind or like my work, send me a message.    </p>
-          <table>
-            <tr id="firstrow">
-              <td colspan="2"><a class="button btn btn-primary btn-lg btn-outline-success btn-block" href="#">Say Hello</a></td>
-            </tr>
-            <tr class="secondaryrow">
-              <td class="rightalign">GitHub :</td>
-              <td class="leftalign">github.com/chandojo</td>
-            <tr>
-          </table>
+
+          <?php include('form_validate.php');?>
+          <form id="contact-form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+            Name: <input type="text" name="name" /> <span class="error">* <?php echo $nameErr;?></span> <br/>
+            Email: <input type="text" name="email"  /> <span class="error">* <?php echo $emailErr;?></span> <br/>
+            Message: <textarea name="message"></textarea> <span class="error">* <?php echo $messageErr;?></span> <br/>
+            <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+            <button type="submit" form="contact-form" value="Submit">Submit</button> <span><?php echo $success; ?></span>
+
+          </form>
+
         </div>
 
         </div>
