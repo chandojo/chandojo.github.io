@@ -49,7 +49,6 @@
               <h4 class="title">
                 Butch Refined: A blog
               </h4>
-
             <div class="project-details">
               <div class="detail">
                 <p class="project "> Made from Django and launched with Heroku and AWS, this is Celena's first ever web app.  It is an on ongoing project that is a true test of patience and independent learning.  Originally created as a lifestyle blog,

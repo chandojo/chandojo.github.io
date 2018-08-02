@@ -1,4 +1,65 @@
 <?php
+// Example from PHPMailer documentation
+
+/**
+ * This example shows how to handle a simple contact form.
+ */
+//Import PHPMailer classes into the global namespace
+
+use PHPMailer\PHPMailer\PHPMailer;
+$msg = '';
+//Don't run this unless we're handling a form submission
+if (array_key_exists('email', $_POST)) {
+    date_default_timezone_set('Etc/UTC');
+    require '../vendor/autoload.php';
+    //Create a new PHPMailer instance
+    $mail = new PHPMailer;
+    //Tell PHPMailer to use SMTP - requires a local mail server
+    //Faster and safer than using mail()
+    $mail->SMTPDebug = 2;                                 // Enable verbose debug output
+        $mail->isSMTP();                                      // Set mailer to use SMTP
+        $mail->Host = 'smtp1.example.com;smtp2.example.com';  // Specify main and backup SMTP servers
+        $mail->SMTPAuth = true;                               // Enable SMTP authentication
+        $mail->Username = 'user@example.com';                 // SMTP username
+        $mail->Password = 'secret';                           // SMTP password
+        $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+        $mail->Port = 587;                                    // TCP port to connect to
+
+
+    //Use a fixed address in your own domain as the from address
+    //**DO NOT** use the submitter's address here as it will be forgery
+    //and will cause your messages to fail SPF checks
+    $mail->setFrom('from@example.com', 'First Last');
+    //Send the message to yourself, or whoever should receive contact for submissions
+    $mail->addAddress('whoto@example.com', 'John Doe');
+    //Put the submitter's address in a reply-to header
+    //This will fail if the address provided is invalid,
+    //in which case we should ignore the whole request
+    if ($mail->addReplyTo($_POST['email'], $_POST['name'])) {
+        $mail->Subject = 'New Contact Form Submission';
+        //Keep it simple - don't use HTML
+        $mail->isHTML(false);
+        //Build a simple message body
+        $mail->Body = <<<EOT
+Email: {$_POST['email']}
+Name: {$_POST['name']}
+Message: {$_POST['message']}
+EOT;
+        //Send the message, check for errors
+        if (!$mail->send()) {
+            //The reason for failing to send will be in $mail->ErrorInfo
+            //but you shouldn't display errors to users - process the error, log it on your server.
+            $msg = 'Sorry, something went wrong. Please try again later.';
+        } else {
+            $msg = 'Message sent! Thanks for contacting us.';
+        }
+    } else {
+        $msg = 'Invalid email address, message ignored.';
+    }
+}
+
+
+//----------- INPUT VALIDATION -----------------
 
   $nameErr = $emailErr = $messageErr = "";
   $name = $email = $message = $success = "";
@@ -39,18 +100,19 @@
     }
 
   if($nameErr and $emailErr == "" and $messageErr == ""){
-    $message_body = "";
-    unset($_POST['submit']);
-    foreach($_POST as $key => $value){
-      $message_body = "$key: $value \n";
-    }
+//    $message_body = "";
+//    unset($_POST['submit']);
+//    foreach($_POST as $key => $value){
+//      $message_body = "$key: $value \n";
+//    }
+//
+//    $to = 'cmhandojo@gmail.com';
+//    $subject = "Contact Form Submittal";
+//    if (mail($to, $subject, $message)){
+//      $success = "Message sent, thank you for contacting Celena!";
+//      $name = $email = $message = "";
+//    }
 
-    $to = 'cmhandojo@gmail.com';
-    $subject = "Contact Form Submittal";
-    if (mail($to, $subject, $message)){
-      $success = "Message sent, thank you for contacting Celena!";
-      $name = $email = $message = "";
-    }
   }
 
 
