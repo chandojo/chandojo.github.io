@@ -92,21 +92,22 @@
         </div>
 
         <!---- HIRE ---->
-        <div class="contact section">
+        <div class="contact section hidden">
           <h2 class="title">Let's Work Together</h2>
           <div class="contact-section">
           <p class="contactme">If you have a cool project in mind or like my work, send me a message.    </p>
 
-          <?php include('form_validate.php');?>
+          <?php if (empty($msg)) { ?>
           <form id="contact-form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-            Name: <input type="text" name="name" /> <span class="error">* <?php echo $nameErr;?></span> <br/>
-            Email: <input type="text" name="email"  /> <span class="error">* <?php echo $emailErr;?></span> <br/>
-            Message: <textarea name="message"></textarea> <span class="error">* <?php echo $messageErr;?></span> <br/>
+            Name: <input type="text" name="name" /> <br/>
+            Email: <input type="text" name="email"  /> <br/>
+            Message: <textarea name="message" cols="30" rows="8"></textarea>  <br/>
             <div class="g-recaptcha" data-sitekey="6LeawGcUAAAAALZgZWqsbWOP9yey3p1v9l2BKW__"></div>
-            <button type="submit" form="contact-form" value="Submit">Submit</button> <span><?php echo $success; ?></span>
-
+            <input type="submit" value="Submit">
           </form>
-
+        <?php } else {
+            echo $msg;
+        } ?>
         </div>
 
         </div>
@@ -119,7 +120,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
     <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
-    <script src="script.js"></script>
+<!--    <script src="script.js"></script> -->
 
   </body>
 </html>

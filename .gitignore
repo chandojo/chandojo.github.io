@@ -1,1 +1,10 @@
+#v2.0 ignores
+./vendor
+composer.json
+composer.lock
+form_validate.php
+amazon-ses-smtp-sample.php
+
+#v2.1 ignores
 credentials.csv
+secret-keys.php
