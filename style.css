@@ -2,6 +2,8 @@
 INDEX OF DESIGN:
   1. NameCard
   2. Effects
+  3. Sections
+  4. Responsive Design
 -------------------- */
 
 /* -------------
@@ -17,92 +19,166 @@ INDEX OF DESIGN:
   text-transform:uppercase;
 }
 
+.header-1, .sub-title{
+  font-family: "Lato", sans-serif;
+}
+
 .namecard{
   border:none;
-  width: 50%;
   margin: auto;
 }
 
-.name{
-  font-family: 'Permanent Marker', cursive;
-  vertical-align: middle;
-  font-size: 8em;
-}
-
-.nametag{
-  background-color:maroon;
-  border-radius: 10px;
-  color:white;
-  text-align:center;
-  height:450px;
-  margin-top:10%;
-}
-
-.name-box{
-  background-color:white;
-  color:black;
-  height:250px;
-  width:95%;
-  border-radius: 4px;
-  padding:5px;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-}
-
-.what-i-do{
-  font-size: 1.5em;
+.space, .namecard{
+  width:100%;
 }
 
 /* -------------
-2) Effects
+2) Effects and Overall Design
 -------------- */
 
+body{
+  background-color: whitesmoke;
+}
+
+.bucket{
+  display:flex;
+  flex-wrap:wrap;
+}
+
 .hidden{
-  display:none;
+  display:none; 
+}
+
+.detail, .aboutme, .contactme {
+  vertical-align: text-top;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  width:100%;
+}
+
+.title{
+  font-family:"Lato", sans-serif;
+  text-align:center;
+  text-transform: uppercase;
+}
+
+.section{
+  margin-top:5%;
+  width:100%;
+}
+
+.button {
+	margin-top: 20px;
+}
+
+table{
+  margin:auto;
+  width:100%;
+}
+
+td{
+  text-align: center;
+  width:50%;
+  padding-top:2%;
 }
 
 
-/* ----- Responsive design ----- */
+td.leftalign {
+  text-align:left;
+}
 
-@media only screen and (max-width: 1024px){
+
+/* -------------
+3) Sections
+-------------- */
+
+.project-details {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.proj1, .proj2{
+  padding:1% 5%;
+}
+.project{
+  vertical-align: text-top;
+}
+
+img.project{
+  width:100%;
+}
+
+.about-section, .contact-section{
+  width:100%;
+}
+
+.about-section {
+	margin: auto;
+}
+
+.development{
+  width:100%;
+}
+
+/* --------------
+4) Responsive design
+--------------- */
+
+@media screen and (min-width:550px){
+  .space{
+    width:5%;
+  }
+
   .namecard{
+    width:90%;
+  }
+
+}
+
+@media screen and (min-width:768px){
+  .space{
+    width:10%;
+  }
+
+  .namecard{
+    width:80%;
+  }
+
+  .detail{
+    width:49%;
+    text-align: right;
+  }
+
+  .development{
+    width:100%;
+    text-align:center;
+  }
+
+  p.project{
+    padding:0 5% 0 0;
+  }
+}
+
+
+@media screen and (min-width:1000px){
+  .space{
+    width:20%;
+  }
+
+  .namecard, .about-section{
+    width:60%;
+  }
+
+
+}
+
+@media screen and (min-width:1228px){
+  .space{
+    width:25%;
+  }
+
+  .namecard, table{
     width:50%;
-    margin: 0% 23%;
   }
 
-  .name{
-    font-size:5.5em;
-  }
-}
-
-@media only screen and (max-width:768px){
-  .namecard{
-    width: 75%;
-    margin:auto;
-  }
-  .name{
-    font-size:4.0em;
-  }
-}
-
-@media only screen and (max-width: 540px){
-  .namecard{
-    width:75%;
-    margin:auto;
-  }
-  .nametag{
-    height:325px;
-  }
-  .name-box{
-    height:150px;
-  }
-  .name{
-    font-size:3.5em;
-  }
-  .what-i-do{
-    font-size:1em;
-  }
-  .header-1, .header-2{
-    font-size:4em;
-  }
 }
