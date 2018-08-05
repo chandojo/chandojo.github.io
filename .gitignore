@@ -1,5 +1,5 @@
 #v2.0 ignores
-./vendor
+vendor
 composer.json
 composer.lock
 form_validate.php
