@@ -46,7 +46,7 @@ body{
 }
 
 .hidden{
-  display:none; 
+  display:none;
 }
 
 .detail, .aboutme, .contactme {
@@ -97,7 +97,7 @@ td.leftalign {
 	flex-wrap: wrap;
 }
 
-.proj1, .proj2{
+.proj-blog, .proj-climb, .proj-store{
   padding:1% 5%;
 }
 .project{
