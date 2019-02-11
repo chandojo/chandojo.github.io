@@ -10,9 +10,6 @@ INDEX OF DESIGN:
 1. NameCard
 --------------*/
 
-.header-1, .sub-title{
-  font-family: "Lato", sans-serif;
-}
 .namecard{
   border:none;
   margin: auto;
@@ -36,80 +33,39 @@ body{
   flex-wrap:wrap;
 }
 
-.hidden{
-  display:none;
-}
-
-.detail, .aboutme, .contactme {
-  vertical-align: text-top;
-  font-family: "Roboto Slab", serif;
-  text-align: center;
-  width:100%;
-}
-
-.title{
-  font-family:"Lato", sans-serif;
-  text-align:center;
-  text-transform: uppercase;
-}
-
 .section{
-  margin-top:5%;
   width:100%;
 }
 
-.button {
-	margin-top: 20px;
-}
 
-table{
-  margin:auto;
-  width:100%;
-}
-
-td{
-  text-align: center;
-  width:50%;
-  padding-top:2%;
-}
-
-
-td.leftalign {
-  text-align:left;
-}
 
 
 /* -------------
-3) Sections
+3) Table
 -------------- */
 
-.project-details {
-	display: flex;
-	flex-wrap: wrap;
+table{
+  margin:auto;
 }
 
-.proj-blog, .proj-climb, .proj-store{
-  padding:1% 5%;
-}
-.project{
-  vertical-align: text-top;
+td{
+  width:50%;
 }
 
-img.project{
-  width:100%;
+.td-left{
+  font-family: "Permanent Marker", cursive;
+  font-size: 2rem;
+  text-align:right;
 }
 
-.about-section, .contact-section{
-  width:100%;
+.td-right{
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  padding:.5rem;
+  text-align:left;
+  max-width:200px;
 }
 
-.about-section {
-	margin: auto;
-}
-
-.development{
-  width:100%;
-}
 
 /* --------------
 4) Responsive design
@@ -157,6 +113,21 @@ img.project{
   #nametag{
     width:100%;
   }
+  td{
+    padding:5px;
+  }
+  .td-left{
+    font-size: 1rem;
+    text-align:right;
+  }
+
+  .td-right{
+    word-wrap:break-word;
+    font-size: 1rem;
+    padding:.5rem;
+    text-align:left;
+    max-width:100px;
+  }
 }
 
 @media screen and (min-width:480px){
@@ -175,6 +146,17 @@ img.project{
   #nametag{
     width: 70%;
   }
+  .td-left{
+    font-size: 1.5rem;
+    text-align:right;
+  }
+
+  .td-right{
+    font-size: 1rem;
+    padding:.5rem;
+    text-align:left;
+    max-width:150px;
+  }
 }
 
 
@@ -186,6 +168,17 @@ img.project{
   #nametag{
     width:60%;
   }
+  .td-left{
+    font-size: 1.7rem;
+    text-align:right;
+  }
+
+  .td-right{
+    font-size: 1rem;
+    padding:.5rem;
+    text-align:left;
+    max-width:175px;
+  }
 }
 
 @media screen and (min-width:1280px){
@@ -194,5 +187,16 @@ img.project{
   }
   #nametag{
     width:50%;
+  }
+  .td-left{
+    font-size: 2rem;
+    text-align:right;
+  }
+
+  .td-right{
+    font-size: 1.5rem;
+    padding:.5rem;
+    text-align:left;
+    max-width:200px;
   }
 }
