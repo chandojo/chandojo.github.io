@@ -8,28 +8,19 @@ INDEX OF DESIGN:
 
 /* -------------
 1. NameCard
--------------- */
-.header-1{
-  font-size: 5em;
-}
-
-.sub-title{
-  padding-bottom:3px;
-  font-weight: bold;
-  text-transform:uppercase;
-}
+--------------*/
 
 .header-1, .sub-title{
   font-family: "Lato", sans-serif;
 }
-
 .namecard{
   border:none;
   margin: auto;
 }
 
-.space, .namecard{
-  width:100%;
+#nametag{
+  display:flex;
+  margin:auto;
 }
 
 /* -------------
@@ -159,26 +150,49 @@ img.project{
   }
 }
 
-
-@media screen and (min-width:1000px){
-  .space{
-    width:20%;
+@media screen and (min-width:320px){
+  .namecard{
+    width:100%;
   }
-
-  .namecard, .about-section{
-    width:60%;
+  #nametag{
+    width:100%;
   }
-
-
 }
 
-@media screen and (min-width:1228px){
-  .space{
-    width:25%;
+@media screen and (min-width:480px){
+  .namecard{
+      width: 90%;
+    }
+  #nametag{
+    width: 80%;
+  }
+}
+
+@media screen and (min-width:720px){
+  .namecard{
+    width:80%;
+  }
+  #nametag{
+    width: 70%;
+  }
+}
+
+
+@media screen and (min-width:1024px){
+  .namecard, .about-section{
+    width:70%;
   }
 
-  .namecard, table{
+  #nametag{
+    width:60%;
+  }
+}
+
+@media screen and (min-width:1280px){
+  .namecard{
+    width:60%;
+  }
+  #nametag{
     width:50%;
   }
-
 }
