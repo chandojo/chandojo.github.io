@@ -73,7 +73,7 @@ Fun stuff
 .white{
   z-index:10;
   position:absolute;
-  top:100%;
+  top:50%;
   left:5%;
   opacity:.5;
   color:white;
