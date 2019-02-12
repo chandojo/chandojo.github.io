@@ -1,3 +1,10 @@
 $(function(){
-    console.log(" (\\_/) \n (o.o) \n (___)0 \n Following the white rabbit...");
+
+  var white = document.createElement("div");
+  white.classList.add("white");
+  document.getElementById("bucket").appendChild(white);
+
+  $(".white").append("(\\_/)<br>(o.o)<br>(___)0 <br>");
+
+  console.log(" (\\_/) \n (o.o) \n (___)0 \n Following the white rabbit...");
 });
