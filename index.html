@@ -1,55 +1,73 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta charset="utf-8">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
 
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto+Slab|Lato:900" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 
-    <title>Hello, I am Celena</title>
-  </head>
-  <body>
-    <div id="bucket">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto+Slab|Lato:900" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-      <!-- NAMECARD -->
-      <div class="namecard section">
-          <img id="nametag" src="./imgs/nametag.png"/>
+  <title>Hello, I am Celena</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row" id="landing">
+      <div class="col col-fullheight bg-warning p-0">
+        <h1 class="bg-white text-dark display-4 p-2 intro">Hi! I'm Celena.</h1>
+        <div class="description m-5">
+          <p class="bg-white p-3 description-paragraph">
+            I'm a software engineer, climber, coach, and dubbed "rennaisance woman".
+          </p>
+          <div class="buttons text-center">
+            <button type="button" class="call-to-action btn btn-outline-light btn-lg">See My Work</button>
+            <button type="button" class="call-to-action btn btn-outline-light btn-lg">Cool Things I've Done</button>
+          </div>
+        </div>
       </div>
-      <div class="work section">
-        <table>
-          <thead>
-            <tr>
-              <td class="td-left">
-                My projects <i class="far fa-hand-point-right"></i>
-              </td>
-              <td class="td-right">
-                <a href="https://www.github.com/chandojo" target="_blank"><img src="imgs/GitHub_Logo.png" width="100%"/></a>
-              </td>
-            </tr>
-            <tr >
-              <td class="td-left">
-                Let's collaborate <i class="far fa-hand-point-right"></i>
-              </td>
-              <td class="td-right text-center">
-                cmhandojo@gmail.com
-              </td>
-            </tr>
-          </thead>
-        </table>
+      <div class="col col-fullheight p-0 landing-image">
       </div>
     </div>
+    <div class="row" id="work">
+      <h1 class="m-4 text-dark mx-auto">Here are a few things I'm working on</h1>
+      <div class="w-100"></div>
+      <div class="col-6 mt-2 text-secondary col-ninetyheight text-center">
+        <h3><u>Fitness Initiative Project</u></h3>
+        <p>
+          Made after seeing a demand for physical readiness resources for mountain athletes. The mission of this project is to teach understandable content related to exercise physiology and provide accessible workouts.
+        </p>
+        <a href="https://www.fitinitproj.com" target="_blank">fitinitproj.com</a>
+        <img class="img-thumbnail align-bottom" src="./imgs/FIT.png" width="100%" />
+      </div>
+      <div class="col-6 mt-2 text-secondary col-ninetyheight text-center">
+        <h3><u>V+ Beta (formerly Climb Beta)</u></h3>
+        <p>
+          Finding information and video climbing beta for an area can be time consuming and inconvenient. I created this website to address the needs of climbers who are planning to take a trip outside and want information in one spot by sourcing
+          APIs for weather, maps, and videos across YouTube and Vimeo.
+        </p>
+        <a href="https://climbbeta.herokuapp.com" target="_blank">climbbeta.herokuapp.com</a>
+        <img class="img-thumbnail" src="./imgs/vplus.png" width="100%" />
+      </div>
+    </div>
+    <div class="row" id="cool">
+      <div class="col">
 
-    <!-- Script loaded at end of page -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
-    <script src="script.js"></script>
+      </div>
+    </div>
+  </div>
 
-  </body>
+  <!-- Script loaded at end of page -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
 </html>

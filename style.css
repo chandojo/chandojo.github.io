@@ -1,215 +1,229 @@
 /* -------------------
 INDEX OF DESIGN:
-  1. NameCard
-  2. Effects
+  1. Landing Page
+  2. See My Work
   3. Sections
   4. Responsive Design
 -------------------- */
-
 /* -------------
-1. NameCard
+1. Landing Page
 --------------*/
-
-.namecard{
-  border:none;
-  margin: auto;
+.intro {
+  z-index: 50;
+  position: absolute;
+  right: -16%;
+  top: 21%;
 }
 
-#nametag{
-  display:flex;
-  margin:auto;
+.description {
+  z-index: 40;
+  position: absolute;
+  top: 48%;
+}
+
+.description-paragraph {
+  font-size: 1.5rem;
+}
+
+.landing-image {
+  background-image: url("./imgs/IMG_4367.JPG");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.call-to-action {
+  font-weight: bold;
+}
+
+#id {
+  height: 100vh;
+}
+
+.col-fullheight {
+  height: 100vh;
 }
 
 /* -------------
-2) Effects and Overall Design
+2) See My Work
 -------------- */
-
-body{
-  background-color: whitesmoke;
+.col-ninetyheight {
+  height: 88vh;
 }
-
-#bucket{
-  display:flex;
-  flex-wrap:wrap;
-  margin-top: 5%;
-}
-
-.section{
-  width:100%;
-}
-
-
-
 
 /* -------------
 3) Table
 -------------- */
-
-table{
-  margin:auto;
+table {
+  margin: auto;
 }
 
-td{
-  width:50%;
+td {
+  width: 50%;
 }
 
-.td-left{
+.td-left {
   font-family: "Permanent Marker", cursive;
   font-size: 2rem;
-  text-align:right;
+  text-align: right;
 }
 
-.td-right{
+.td-right {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
-  padding:.5rem;
-  text-align:left;
-  max-width:200px;
+  padding: .5rem;
+  text-align: left;
+  max-width: 200px;
 }
 
 /*-----------------
 Fun stuff
 --------------------*/
-.white{
-  z-index:10;
-  position:absolute;
-  top:50%;
-  left:5%;
-  opacity:.5;
-  color:white;
-
+.white {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  opacity: .5;
+  color: white;
 }
 
 /* --------------
 4) Responsive design
 --------------- */
-
-@media screen and (min-width:550px){
-  .space{
-    width:5%;
+@media screen and (min-width:550px) {
+  .space {
+    width: 5%;
   }
 
-  .namecard{
-    width:90%;
+  .namecard {
+    width: 90%;
   }
-
 }
 
-@media screen and (min-width:768px){
-  .space{
-    width:10%;
+@media screen and (min-width:768px) {
+  .space {
+    width: 10%;
   }
 
-  .namecard{
-    width:80%;
+  .namecard {
+    width: 80%;
   }
 
-  .detail{
-    width:49%;
+  .detail {
+    width: 49%;
     text-align: right;
   }
 
-  .development{
-    width:100%;
-    text-align:center;
+  .development {
+    width: 100%;
+    text-align: center;
   }
 
-  p.project{
-    padding:0 5% 0 0;
+  p.project {
+    padding: 0 5% 0 0;
   }
 }
 
-@media screen and (min-width:320px){
-  .namecard{
-    width:100%;
-  }
-  #nametag{
-    width:100%;
-  }
-  td{
-    padding:5px;
-  }
-  .td-left{
-    font-size: 1rem;
-    text-align:right;
+@media screen and (min-width:320px) {
+  .namecard {
+    width: 100%;
   }
 
-  .td-right{
-    word-wrap:break-word;
+  #nametag {
+    width: 100%;
+  }
+
+  td {
+    padding: 5px;
+  }
+
+  .td-left {
     font-size: 1rem;
-    padding:.5rem;
-    text-align:left;
-    max-width:100px;
+    text-align: right;
+  }
+
+  .td-right {
+    word-wrap: break-word;
+    font-size: 1rem;
+    padding: .5rem;
+    text-align: left;
+    max-width: 100px;
   }
 }
 
-@media screen and (min-width:480px){
-  .namecard{
-      width: 90%;
-    }
-  #nametag{
+@media screen and (min-width:480px) {
+  .namecard {
+    width: 90%;
+  }
+
+  #nametag {
     width: 80%;
   }
 }
 
-@media screen and (min-width:720px){
-  .namecard{
-    width:80%;
+@media screen and (min-width:720px) {
+  .namecard {
+    width: 80%;
   }
-  #nametag{
+
+  #nametag {
     width: 70%;
   }
-  .td-left{
+
+  .td-left {
     font-size: 1.5rem;
-    text-align:right;
+    text-align: right;
   }
 
-  .td-right{
+  .td-right {
     font-size: 1rem;
-    padding:.5rem;
-    text-align:left;
-    max-width:150px;
+    padding: .5rem;
+    text-align: left;
+    max-width: 150px;
   }
 }
 
-
-@media screen and (min-width:1024px){
-  .namecard, .about-section{
-    width:70%;
+@media screen and (min-width:1024px) {
+  .namecard, .about-section {
+    width: 70%;
   }
 
-  #nametag{
-    width:60%;
+  #nametag {
+    width: 60%;
   }
-  .td-left{
+
+  .td-left {
     font-size: 1.7rem;
-    text-align:right;
+    text-align: right;
   }
 
-  .td-right{
+  .td-right {
     font-size: 1rem;
-    padding:.5rem;
-    text-align:left;
-    max-width:175px;
+    padding: .5rem;
+    text-align: left;
+    max-width: 175px;
   }
 }
 
-@media screen and (min-width:1280px){
-  .namecard{
-    width:60%;
-  }
-  #nametag{
-    width:50%;
-  }
-  .td-left{
-    font-size: 2rem;
-    text-align:right;
+@media screen and (min-width:1280px) {
+  .namecard {
+    width: 60%;
   }
 
-  .td-right{
+  #nametag {
+    width: 50%;
+  }
+
+  .td-left {
+    font-size: 2rem;
+    text-align: right;
+  }
+
+  .td-right {
     font-size: 1.5rem;
-    padding:.5rem;
-    text-align:left;
-    max-width:200px;
+    padding: .5rem;
+    text-align: left;
+    max-width: 200px;
   }
 }
