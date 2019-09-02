@@ -1,3 +1,7 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 /* -------------------
 INDEX OF DESIGN:
   1. Landing Page
@@ -40,7 +44,7 @@ INDEX OF DESIGN:
   height: 100vh;
 }
 
-.col-fullheight {
+.fullheight {
   height: 100vh;
 }
 
@@ -269,8 +273,21 @@ Fun stuff
   }
 }
 
-.flex-box {
-  margin-top: 30%;
+.name {
+  font-family: 'Shrikhand', serif
+}
+
+a.main-anchor {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.main-anchor:hover {
+  color: silver;
+}
+
+.sub-header {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .flex-item {
