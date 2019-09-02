@@ -70,6 +70,21 @@ INDEX OF DESIGN:
   filter: brightness(0) invert(1);
 }
 
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.side-margin {
+  margin-left: 160px;
+}
+
 /* -------------
 2) See My Work
 -------------- */
@@ -252,4 +267,15 @@ Fun stuff
     text-align: left;
     max-width: 200px;
   }
+}
+
+.flex-box {
+  margin-top: 30%;
+}
+
+.flex-item {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin: 5px
 }
