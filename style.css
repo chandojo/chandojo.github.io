@@ -296,3 +296,16 @@ a.main-anchor:hover {
   text-align: center;
   margin: 5px
 }
+
+.section-block {
+  display: inline-flex;
+}
+
+.section-image {
+  width: 100%;
+}
+
+.left-section, .right-section {
+  width: 50%;
+  margin: 5px;
+}
