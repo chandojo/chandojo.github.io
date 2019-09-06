@@ -286,6 +286,13 @@ a.main-anchor:hover {
   color: silver;
 }
 
+.horizontal-scroll {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  display: inherit;
+}
+
 .sub-header {
   font-family: 'Open Sans', sans-serif;
 }
@@ -308,4 +315,9 @@ a.main-anchor:hover {
 .left-section, .right-section {
   width: 50%;
   margin: 5px;
+}
+
+.event-padding {
+  padding-top: 20%;
+  padding-bottom: 30%;
 }

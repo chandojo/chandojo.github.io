@@ -71,57 +71,96 @@
     <div class="row" id="events">
       <h1 class="m-4 text-dark mx-auto">Current (and Past) Events</h1>
       <div class="w-100"></div>
-      <div class="col-6 mt-2 text-secondary col-ninetyheight text-center">
-        <div class="section-block">
-          <div class="left-section">
-            <img src="imgs/trivia.jpg" class="section-image" />
-          </div>
-          <div class="right-section">
-            <h3>Monthly Trivia</h3>
-            <p>
-              In conjuction with West Wall Bar and other volunteers, we put on a once-a-month trivia night benefitting Seattle's local chapter of the American Alpine Club (AAC). I'm involved with hosting, creating questions, and collobarating on
-              event
-              logistics.
-            </p>
+      <div class="horizontal-scroll">
+        <div class="horizontal-card mt-2 text-secondary bg-light">
+          <div class="section-block text-wrap" style="width:75vw;">
+            <div class="left-section">
+              <img src="imgs/trivia.jpg" class="section-image" />
+            </div>
+            <div class="right-section text-center">
+              <h3>Monthly Trivia</h3>
+              <p>
+                In conjuction with West Wall Bar and other volunteers, we put on a once-a-month trivia night benefitting Seattle's local chapter of the American Alpine Club (AAC). I'm involved with hosting, creating questions, and collobarating on
+                event
+                logistics.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-6 mt-2 text-secondary col-ninetyheight text-center ">
-        <div class="section-block" style="display:block; padding: 10px;">
-          <div class="top-section">
-            <h3>Spike the Surfers Fundraiser 2017</h3>
-            <p>
-              A spike ball tournament to raise funds for the San Diego Surfers women's rugby team. I MCed the event making sure the tournament ran smoothly without glitches tournament flow.
-            </p>
-          </div>
-          <div class="bottom-section">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/yDxcX_SJGsY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="horizontal-card mt-2 text-center text-white bg-dark">
+          <div class="section-block text-wrap">
+            <div class="left-section">
+              <h3>Spike the Surfers Fundraiser 2017</h3>
+              <p>
+                A spike ball tournament to raise funds for the San Diego Surfers women's rugby team. I MCed the event making sure the tournament ran smoothly without glitches tournament flow.
+              </p>
+            </div>
+            <div class="right-section" style="overflow-x: contain;">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/yDxcX_SJGsY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </div>
       <div class="row" id="leadership">
         <h1 class="m-4 text-dark mx-auto">Leadership section!</h1>
         <div class="w-100"></div>
-        <div class="col-6 mt-2 text-secondary col-ninetyheight text-center">
-          <h3><u>Fitness Initiative Project</u></h3>
-          <p>
-            Made after seeing a demand for physical readiness resources for mountain athletes. The mission of this project is to teach understandable content related to exercise physiology and provide accessible workouts.
-          </p>
-          <a href="https://www.fitinitproj.com" target="_blank">fitinitproj.com</a>
-          <img class="img-thumbnail align-bottom" src="./imgs/FIT.png" width="100%" />
+        <div class="col-6 mt-2 text-secondary text-center">
+          <div class="section-block">
+            <div class="left-section">
+              <img src="imgs/deadlift.jpg" class="section-image" />
+            </div>
+            <div class="right-section">
+              <h3><u>Deadlift Fundamental Workshop Series</u></h3>
+              <p>
+                In collaboration with Seattle Bouldering Project, I led and designed a 3-week program dedicated to teaching the fundamentals of the deadlift.
+              </p>
+            </div>
+          </div>
         </div>
         <div class="col-6 mt-2 text-secondary col-ninetyheight text-center">
-          <h3><u>V+ Beta (formerly Climb Beta)</u></h3>
-          <p>
-            Finding information and video climbing beta for an area can be time consuming and inconvenient. I created this website to address the needs of climbers who are planning to take a trip outside and want information in one spot by sourcing
-            APIs for weather, maps, and videos across YouTube and Vimeo.
-          </p>
-          <a href="https://climbbeta.herokuapp.com" target="_blank">climbbeta.herokuapp.com</a>
-          <img class="img-thumbnail" src="./imgs/vplus.png" width="100%" />
         </div>
       </div>
-      <div class="row" id="contact">
-        <h1 class="m-4 text-dark mx-auto">Contact Section!</h1>
+      <div class="row justify-content-center" id="contact">
+        <div class="w-100"></div>
+        <div class="col-6 mt-2 text-secondary col-ninetyheight text-center">
+          <div id="wufoo-z1qvqwlk0dfg0ex"> Fill out my <a href="https://chandojo.wufoo.com/forms/z1qvqwlk0dfg0ex">online form</a>. </div>
+          <script type="text/javascript">
+            var z1qvqwlk0dfg0ex;
+            (function(d, t) {
+              var s = d.createElement(t),
+                options = {
+                  'userName': 'chandojo',
+                  'formHash': 'z1qvqwlk0dfg0ex',
+                  'autoResize': true,
+                  'height': '517',
+                  'async': true,
+                  'host': 'wufoo.com',
+                  'header': 'show',
+                  'ssl': true
+                };
+              s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'secure.wufoo.com/scripts/embed/form.js';
+              s.onload = s.onreadystatechange = function() {
+                var rs = this.readyState;
+                if (rs)
+                  if (rs != 'complete')
+                    if (rs != 'loaded') return;
+                try {
+                  z1qvqwlk0dfg0ex = new WufooForm();
+                  z1qvqwlk0dfg0ex.initialize(options);
+                  z1qvqwlk0dfg0ex.display();
+                } catch (e) {}
+              };
+              var scr = d.getElementsByTagName(t)[0],
+                par = scr.parentNode;
+              par.insertBefore(s, scr);
+            })(document, 'script');
+          </script>
+        </div>
+        <div class="col-6 mt-2 text-secondary col-ninetyheight text-center align-middle">
+          <p class="align-middle">
+            If you are interested in collobarating with me, please send a message with the contact form. Be sure to include what your ideas and where I can fit in to your idea.
+          </p>
+        </div>
       </div>
 
 
