@@ -7,11 +7,17 @@
 body {
   font-family: 'Open Sans', sans-serif;
   position: relative;
+  background-image: url('./imgs/broken-noise-1920X1080.png');
+  background-color: #fffff0;
 }
 
 /****
 1. DIV ATTRIBUTES
 ****/
+#landing {
+  background-color: whitesmoke;
+}
+
 .fullheight {
   height: 100vh;
 }
