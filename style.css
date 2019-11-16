@@ -73,3 +73,7 @@ a.main-anchor {
 a.main-anchor:hover {
   color: silver;
 }
+
+.white {
+  color: white;
+}
