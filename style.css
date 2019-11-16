@@ -7,7 +7,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   position: relative;
-  background-image: url('./imgs/broken-noise-1920X1080.png');
+  background-image: url('./imgs/broken-noise-1920x1080.png');
   background-color: #fffff0;
 }
 
@@ -55,7 +55,7 @@ body {
 2. FONTS & TEXT
 ****/
 .name {
-  font-family: 'Shrikhand', serif
+  font-family: 'Shrikhand', cursive;
 }
 
 .sub-header {
