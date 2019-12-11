@@ -14,10 +14,6 @@ body {
 /****
 1. DIV ATTRIBUTES
 ****/
-#landing {
-  background-color: whitesmoke;
-}
-
 .fullheight {
   height: 100vh;
 }
@@ -49,6 +45,26 @@ body {
 .event-padding {
   padding-top: 20%;
   padding-bottom: 30%;
+}
+
+.project-image, #exercise-coach-tools {
+  border: solid whitesmoke 5px;
+  box-shadow: 2px 2px;
+}
+
+#exercise-coach-tools {
+  width: 375px;
+  height: 234px;
+  font-family: 'Bebas Neue', cursive;
+  background-color: aliceblue;
+}
+
+#contact {
+  background-color: whitesmoke;
+}
+
+#title-name {
+  padding-bottom: 3%;
 }
 
 /****
