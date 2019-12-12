@@ -37,16 +37,6 @@ body {
   width: 100%;
 }
 
-.left-section, .right-section {
-  width: 50%;
-  margin: 5px;
-}
-
-.event-padding {
-  padding-top: 20%;
-  padding-bottom: 30%;
-}
-
 .project-image, #exercise-coach-tools {
   border: solid whitesmoke 5px;
   box-shadow: 2px 2px;
